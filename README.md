@@ -22,7 +22,19 @@ Install dependencies (make sure you activate your virtual environment first):
 python -m pip install -r requirements.txt -r requirements/dev.txt
 ```
 
+Apply pending migrations
+```shell
+cd src
+python manage.py migrate
+```
+
+Run local webserver
+```shell
+cd src
+python manage.py runserver
+```
+
 Run tests:
 ```shell
-python -m pytest .
+python -m pytest src
 ```
